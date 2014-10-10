@@ -217,7 +217,7 @@ public class DsAnnotationBuildVisitor implements IResourceVisitor, IResourceDelt
     // In order to parse 1.5 code, some compiler options need to be set to
     // 1.5
     Map options = JavaCore.getOptions();
-    JavaCore.setComplianceOptions(JavaCore.VERSION_1_7, options);
+    JavaCore.setComplianceOptions(JavaCore.VERSION_1_8, options);
     parser.setCompilerOptions(options);
     parser.setResolveBindings(true);
     CompilationUnit result = (CompilationUnit) parser.createAST(null);
